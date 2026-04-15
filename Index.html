@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premium Sneaker Store | Urban Velocity Series</title>
+
+    <!-- CART SYSTEM -->
+    <script>
+        let cart = 0;
+        function addToCart(product) {
+            cart++;
+            alert(product + " added to cart! Total items: " + cart);
+            document.getElementById("cartCount").innerHTML = cart;
+        }
+    </script>
+</head>
+
+<body bgcolor="#f4f4f4" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <!-- Header -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
+        <tr>
+            <td align="center">
+                <header>
+                    <h1><font face="Arial, Helvetica, sans-serif" color="#333" size="+4">URBAN VELOCITY</font></h1>
+                    <p><font face="Arial, Helvetica, sans-serif" color="#cc0000" size="+1"><b>PREMIUM FOOTWEAR SERIES</b></font></p>
+                    <h3>🛒 Cart: <span id="cartCount">0</span></h3>
+                </header>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Main Scrollable Content -->
+    <center>
+        <table width="800" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+            
+            <!-- Product 01 -->
+            <tr>
+                <td align="center" style="padding-top: 40px;">
+                    <b><font face="Arial" size="+2" color="#333">01. THE SIGNATURE SILHOUETTE</font></b><br><br>
+                    <img src="image 1.jpeg" alt="Signature Silhouette" width="700">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="padding: 20px 60px;">
+                    <h3><font face="Arial" color="#008000">₹12,499.00</font></h3>
+                    <p><font face="Arial" color="#555">The flagship of the series. Features high-grade micro-perforated Italian leather and our signature velocity lines. Designed for those who appreciate classic aesthetics with modern performance.</font></p>
+
+                    <button type="button" onclick="addToCart('Signature Silhouette')" 
+                        style="cursor: pointer; padding: 15px 50px; background-color: #000; color: #fff; border: none;">
+                        Add to Cart
+                    </button>
+
+                    <hr color="#eeeeee" size="1" width="80%">
+                </td>
+            </tr>
+
+            <!-- Product 02 -->
+            <tr>
+                <td align="center" style="padding-top: 40px;">
+                    <b><font face="Arial" size="+2" color="#333">02. AERODYNAMIC SIDE PROFILE</font></b><br><br>
+                    <img src="image 2.jpeg" alt="Aerodynamic Profile" width="700">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="padding: 20px 60px;">
+                    <h3><font face="Arial" color="#008000">₹11,999.00</font></h3>
+                    <p><font face="Arial" color="#555">Engineered for pure speed. This model features a low-profile aerodynamic curve and an integrated carbon-fiber arch support system to maximize energy return during every stride.</font></p>
+
+                    <button type="button" onclick="addToCart('Aerodynamic Side Profile')" 
+                        style="cursor: pointer; padding: 15px 50px; background-color: #000; color: #fff; border: none;">
+                        Add to Cart
+                    </button>
+
+                    <hr color="#eeeeee" size="1" width="80%">
+                </td>
+            </tr>
+
+            <!-- Product 03 -->
+            <tr>
+                <td align="center" style="padding-top: 40px;">
+                    <b><font face="Arial" size="+2" color="#333">03. TACTICAL HEEL & TRACTION</font></b><br><br>
+                    <img src="image 3.jpeg" alt="Tactical Heel" width="700">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="padding: 20px 60px;">
+                    <h3><font face="Arial" color="#008000">₹13,299.00</font></h3>
+                    <p><font face="Arial" color="#555">Our most rugged variant. Equipped with multi-directional traction lugs and shock-absorbing impact-guard technology embedded in the heel for ultimate stability on any surface.</font></p>
+
+                    <button type="button" onclick="addToCart('Tactical Heel & Traction')" 
+                        style="cursor: pointer; padding: 15px 50px; background-color: #000; color: #fff; border: none;">
+                        Add to Cart
+                    </button>
+                </td>
+            </tr>
+            
+            <!-- Global Configuration Section -->
+            <tr>
+                <td style="padding: 40px;" bgcolor="#fdfdfd">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td align="center">
+                                <h2><font face="Arial, Helvetica, sans-serif" color="#222">Customize Your Pair</font></h2>
+                                <hr color="#cc0000" size="2" width="50">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 30px;">
+                                <form>
+                                    <center>
+                                    <table border="0" cellspacing="0" cellpadding="10">
+                                        <tr>
+                                            <td valign="top">
+                                                <b><font face="Arial">Colorway</font></b><br><br>
+                                                <input type="radio" id="c1" name="color" checked> <label for="c1"><font face="Arial">Heritage Red</font></label><br>
+                                                <input type="radio" id="c2" name="color"> <label for="c2"><font face="Arial">Obsidian Blue</font></label><br>
+                                                <input type="radio" id="c3" name="color"> <label for="c3"><font face="Arial">Core Black</font></label>
+                                            </td>
+                                            <td width="50"></td>
+                                            <td valign="top">
+                                                <b><font face="Arial">Size</font></b><br><br>
+                                                <input type="radio" id="s8" name="size"> <label for="s8"><font face="Arial">8</font></label>
+                                                <input type="radio" id="s9" name="size" checked> <label for="s9"><font face="Arial">9</font></label>
+                                                <input type="radio" id="s10" name="size"> <label for="s10"><font face="Arial">10</font></label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br><br>
+                                    <button type="button" style="cursor: pointer; padding: 20px 80px; background-color: #000; color: #fff; border: none;">
+                                        <b><font size="+2" face="Arial">CO3</font></b>
+                                    </button>
+                                    </center>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Reviews Section -->
+            <tr>
+                <td bgcolor="#fafafa" style="padding: 40px;">
+                    <h3><font face="Arial, Helvetica, sans-serif" color="#333" size="+2">Customer Feedback</font></h3>
+                    <hr color="#dddddd" size="1">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="10">
+                        <tr>
+                            <td><b><font face="Arial">Rohan S.</font></b> <font color="#ffcc00">★★★★★</font><br><font face="Arial" color="#666" size="-1">The traction on the tactical model (03) is best-in-class.</font></td>
+                        </tr>
+                        <tr>
+                            <td><b><font face="Arial">Anjali M.</font></b> <font color="#ffcc00">★★★★★</font><br><font face="Arial" color="#666" size="-1">Signature silhouette (01) looks amazing with any outfit.</font></td>
+                        </tr>
+                        <tr>
+                            <td><b><font face="Arial">Vikram K.</font></b> <font color="#ffcc00">★★★★☆</font><br><font face="Arial" color="#666" size="-1">Aerodynamic model (02) is incredibly light and fast.</font></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Footer -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="40">
+            <tr><td align="center"><p><font face="Arial" size="-1" color="#999">&copy; 2026 Urban Velocity India | Secure Payment via CO3</font></p></td></tr>
+        </table>
+    </center>
+
+</body>
+</html>
